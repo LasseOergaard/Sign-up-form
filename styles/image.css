@@ -1,0 +1,66 @@
+
+.sign-up-section {
+  z-index: 2;
+
+}
+
+.sign-up-image {
+  position: relative;
+}
+
+.sign-up-image__image {
+  height: 100vh;
+}
+
+
+
+.sign-up-image__image-title {
+  position: absolute;
+  display: flex;
+  right: 0;
+  left: 0;
+  bottom: 55%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.5);
+  height: 20%;
+  color: white;
+  font-family: norse;
+  font-size: 8vh;
+}
+
+.sign-up-image__image-title i {
+  margin-right: 3%;
+  margin-bottom: 3%;
+}
+
+.sign-up-image__image-credit {
+  position: absolute; 
+  display: inline-block;
+  right: 0;
+  left: 0;
+  bottom: 10px;
+  text-align: center;
+
+  color: white;
+  font-weight: 100;
+  font-family: roboto;
+  font-size: 10px;
+
+}
+
+.sign-up-image__image-credit em {
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.sign-up-image__image-credit em:hover {
+  opacity: 0.85;
+}
+
+
+
+

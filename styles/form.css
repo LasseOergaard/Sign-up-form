@@ -1,0 +1,137 @@
+.form-section {
+  display:flex;
+  flex-direction: column;
+  flex: 20vh 80vh
+
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.form__header {
+  padding: 90px 164px 10px 34px;
+  background-color: rgb(245, 245, 245);
+  
+}
+
+.form__header-text {
+  font-size: 18px;
+  font-family: roboto;
+  font-weight: 450;
+  color: rgb(68, 65, 65);
+  
+  
+}
+
+.form__inputs {
+  padding-left: 32px;
+  background-color: white;
+  padding-bottom: 16px;
+  box-shadow: 0px 0px 6px -3px rgba(0,0,0,0.75);
+  z-index: 1;
+}
+
+.legend {
+  color: rgb(25, 24, 24);
+  font-size: 20px;
+  font-family: roboto;
+  font-weight: 450;
+  margin-bottom: 12px;
+  padding-top: 16px;
+  padding-left: 0;
+
+
+}
+
+.input-row {
+  display: flex;
+}
+
+.input-row:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+
+.input-section:not(:last-child) {
+  margin-right: 48px;
+}
+.input-section label, .input-section input {
+display: block;
+}
+
+.input-section label {
+  font-family: roboto;
+  color: rgb(101, 97, 97);
+  font-size: 8px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  margin-bottom: 1px;
+}
+
+.input-section input {
+  border: 1px rgba(68, 65, 65, 0.1) solid;
+  border-radius: 2px;
+  height: 16px;
+  transition: border .25s, box-shadow 0.15s ;
+
+}
+
+.input-section input:focus {
+  box-shadow: 0px 0px 4px -2px rgba(0,0,0,0.75);
+  outline: none;
+}
+
+.input-section input:invalid {
+  border: 1px red solid;
+  }
+
+.below-inputs {
+  background-color: rgb(245, 245, 245);
+  
+}
+
+.submit-button {
+  background-color: rgb(210, 131, 35);
+  border: none;
+  font-family: roboto;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  padding:6px 24px 6px 24px;
+  border-radius: 5px;
+  margin: 20px 0px 32px 32px;
+  
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.submit-button:hover {
+  background-color: rgb(207, 118, 9);
+}
+
+.form-account {
+  font-family: roboto;
+  font-size: 14px;
+  margin-left: 32px;
+  height: 75px;
+}
+
+.form-account em:hover {
+  color: rgb(130, 78, 15);
+}
+
+.form-account em {
+  font-style: normal;
+  font-weight: 500;
+  color: rgb(210, 131, 35);
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.15s;
+}
+
+
+

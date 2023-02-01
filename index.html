@@ -1,12 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="styles/form.css">
+  <link rel="stylesheet" href="styles/image.css">
+  <link rel="stylesheet" href="styles/general.css">
+  <script src="https://kit.fontawesome.com/86cff0f4ad.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  
+  <section class="sign-up-section">
+    <div class="sign-up-image">
+      <img class="sign-up-image__image" src="images/unsplash.avif" alt="">
+      <div class="sign-up-image__image-title">
+        <i class="fa-solid fa-shield"></i>
+        Oergaard
+      </div>
+      <p class="sign-up-image__image-credit">
+        Photo by <em>Haile West</em> on <em>Unsplash</em>
+      </p>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <div class="form__header">
+      <p class="form__header-text">This is not a real service! You know you need something like this to realize your
+        deepest dreams. Sign up <em>now</em> to get started</p>
+      <p class="form__header-text">
+        You <em>know</em> you want to.
+      </p>
+    </div>
+
+    <form action="">
+      <div class="form__inputs">
+        <legend class="legend">Let's do this!</legend>
+        <div class="input-row">
+          <div class="input-section">
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" name="first-name" id="first-name">
+          </div>
+          <div class="input-section">
+            <label for="last-name">LAST NAME</label>
+            <input type="text" name="last-name" id="last-name">
+          </div>
+        </div>
+
+        <div class="input-row">
+          <div class="input-section">
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" id="email">
+          </div>
+          <div class="input-section">
+            <label for="phone-number">PHONE NUMBER</label>
+            <input type="text" name="phone-number" id="phone-number">
+          </div>
+        </div>
+
+        <div class="input-row">
+          <div class="input-section">
+            <label for="password">PASSWORD</label>
+            <input type="password" name="password" id="password">
+          </div>
+          <div class="input-section">
+            <label for="confirm-password">CONFIRM PASSWORD</label>
+            <input type="password" name="confirm-password" id="confirm-password">
+          </div>
+        </div>
+      </div>
+
+      <div class="below-inputs">
+        <div class="form__submit">
+          <button class="submit-button">Create Account</button>
+        </div>
+        <div class="form-account">
+          Already have an account? <em>Log in</em>
+        </div>
+      </div>
+    </form>
+  </section>
+
+
 </body>
+
 </html>
