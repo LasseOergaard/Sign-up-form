@@ -1,5 +1,16 @@
 body {
   margin: 0;
   padding: 0;
-  display: flex;
 }
+
+.content {
+  display: flex;
+  
+}
+
+@media(max-width: 600px){
+  .image-section  {
+    display: none;
+  }
+}
+

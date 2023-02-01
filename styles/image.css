@@ -1,20 +1,17 @@
 
-.sign-up-section {
+.image-section {
+  position:relative;
   z-index: 2;
-
-}
-
-.sign-up-image {
-  position: relative;
-}
-
-.sign-up-image__image {
-  height: 100vh;
+  background-image: url(../images/unsplash.avif);
+  background-size: cover;
+  flex: 3;
 }
 
 
 
-.sign-up-image__image-title {
+
+
+.image-title {
   position: absolute;
   display: flex;
   right: 0;
@@ -26,15 +23,15 @@
   height: 20%;
   color: white;
   font-family: norse;
-  font-size: 8vh;
+  font-size: 50px;
 }
 
-.sign-up-image__image-title i {
-  margin-right: 3%;
-  margin-bottom: 3%;
+.image-title i {
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
-.sign-up-image__image-credit {
+.image-credit {
   position: absolute; 
   display: inline-block;
   right: 0;
@@ -49,7 +46,7 @@
 
 }
 
-.sign-up-image__image-credit em {
+.image-credit em {
   font-style: normal;
   font-weight: 400;
   text-decoration: underline;
@@ -57,7 +54,7 @@
   transition: all 0.1s;
 }
 
-.sign-up-image__image-credit em:hover {
+.image-credit em:hover {
   opacity: 0.85;
 }
 

@@ -1,15 +1,7 @@
 .form-section {
   display:flex;
   flex-direction: column;
-  flex: 20vh 80vh
-
-
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  
+  flex: 5;
 }
 
 .form__header {
@@ -23,16 +15,14 @@ form {
   font-family: roboto;
   font-weight: 450;
   color: rgb(68, 65, 65);
-  
-  
 }
 
-.form__inputs {
+.form__input-list {
   padding-left: 32px;
   background-color: white;
   padding-bottom: 16px;
   box-shadow: 0px 0px 6px -3px rgba(0,0,0,0.75);
-  z-index: 1;
+  z-index: 3;
 }
 
 .legend {
@@ -43,8 +33,6 @@ form {
   margin-bottom: 12px;
   padding-top: 16px;
   padding-left: 0;
-
-
 }
 
 .input-row {
@@ -59,9 +47,6 @@ form {
 .input-section:not(:last-child) {
   margin-right: 48px;
 }
-.input-section label, .input-section input {
-display: block;
-}
 
 .input-section label {
   font-family: roboto;
@@ -70,13 +55,14 @@ display: block;
   font-weight: bold;
   letter-spacing: 1.5px;
   margin-bottom: 1px;
+  display: block;
 }
 
 .input-section input {
   border: 1px rgba(68, 65, 65, 0.1) solid;
   border-radius: 2px;
-  height: 16px;
   transition: border .25s, box-shadow 0.15s ;
+  display: block;
 
 }
 
@@ -85,13 +71,10 @@ display: block;
   outline: none;
 }
 
-.input-section input:invalid {
-  border: 1px red solid;
-  }
 
-.below-inputs {
+.below-input-list {
   background-color: rgb(245, 245, 245);
-  
+  padding-bottom:22px;
 }
 
 .submit-button {
@@ -113,24 +96,36 @@ display: block;
   background-color: rgb(207, 118, 9);
 }
 
-.form-account {
+.already-account {
   font-family: roboto;
   font-size: 14px;
   margin-left: 32px;
   height: 75px;
 }
 
-.form-account em:hover {
+.already-account em:hover {
   color: rgb(130, 78, 15);
 }
 
-.form-account em {
+.already-account em {
   font-style: normal;
   font-weight: 500;
   color: rgb(210, 131, 35);
   text-decoration: underline;
   cursor: pointer;
   transition: color 0.15s;
+}
+
+
+
+
+
+input:focus:valid {
+  border: 1px solid rgb(17, 120, 17);
+}
+
+input:focus:invalid {
+  border: 1px solid rgb(193, 25, 25);
 }
 
 
