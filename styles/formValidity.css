@@ -1,0 +1,9 @@
+.active {
+  margin-top: 2px;
+  font-size: 8px;
+  position: absolute;
+  font-family: Roboto;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: rgb(174, 15, 15);
+}

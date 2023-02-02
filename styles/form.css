@@ -120,11 +120,19 @@
 
 
 
-input:focus:valid {
+.validate input:focus:valid {
   border: 1px solid rgb(17, 120, 17);
 }
 
-input:focus:invalid {
+.validate input:focus:invalid {
+  border: 1px solid rgb(193, 25, 25);
+}
+
+.valid:focus {
+  border: 1px solid rgb(17, 120, 17);
+}
+
+.invalid:focus {
   border: 1px solid rgb(193, 25, 25);
 }
 

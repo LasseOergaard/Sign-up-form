@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="styles/form.css">
   <link rel="stylesheet" href="styles/image.css">
   <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/formValidity.css">
   <script src="https://kit.fontawesome.com/86cff0f4ad.js" crossorigin="anonymous"></script>
 </head>
 
@@ -39,35 +40,41 @@
         <div class="form__input-list">
           <legend class="legend">Let's do this!</legend>
           <div class="input-row">
-            <div class="input-section">
+            <div class="input-section validate">
               <label for="first-name">FIRST NAME</label>
               <input required type="text" name="first-name" id="first-name" pattern="([a-zA-Z]*)+([ ]*)+([a-zA-Z]*)">
+              <span class="first-name-error" aria-live="polite"></span>
             </div>
-            <div class="input-section">
+            <div class="input-section validate">
               <label for="last-name">LAST NAME</label>
               <input required type="text" name="last-name" id="last-name" pattern="([a-zA-Z]*)+([ ]*)+([a-zA-Z]*)">
+              <span class="last-name-error" aria-live="polite"></span>
             </div>
           </div>
 
           <div class="input-row">
-            <div class="input-section">
+            <div class="input-section validate">
               <label for="email">EMAIL</label>
               <input required type="email" name="email" id="email">
+              <span class="email-error" aria-live="polite"></span>
             </div>
-            <div class="input-section">
+            <div class="input-section validate">
               <label for="phone-number">PHONE NUMBER</label>
-              <input required type="text" name="phone-number" id="phone-number" pattern="((\+45)?)+\d+\d+\d+\d+\d+\d+\d+\d">
+              <input required type="text" name="phone-number" id="phone-number" pattern="((\d\d\d)|(\(\d\d\d\)))+(( |-)?)+\d\d\d+((-| )?)+(\d\d\d)">
+              <span class="phone-number-error" aria-live="polite"></span>
             </div>
           </div>
 
           <div class="input-row">
-            <div class="input-section">
+            <div class="input-section validate">
               <label for="password">PASSWORD</label>
               <input required type="password" name="password" id="password" minlength="8">
+              <span class="password-error" aria-live="polite"></span>
             </div>
             <div class="input-section">
               <label for="confirm-password">CONFIRM PASSWORD</label>
-              <input required type="password" name="confirm-password" id="confirm-password">
+              <input required type="password" name="confirm-password" id="confirm-password" class="invalid">
+              <span class="confirm-password-error" aria-live="polite"></span>
             </div>
           </div>
         </div>
@@ -83,14 +90,8 @@
       </form>
     </div>
 
-
   </section>
-
-
-
-
-
-
+  <script src="errors.js"></script>
 </body>
 
 </html>
